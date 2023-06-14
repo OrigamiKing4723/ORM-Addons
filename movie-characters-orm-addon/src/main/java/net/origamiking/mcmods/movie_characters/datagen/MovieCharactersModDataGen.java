@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.modid.datagen;
+package net.origamiking.mcmods.movie_characters.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

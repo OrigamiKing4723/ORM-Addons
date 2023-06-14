@@ -1,7 +1,10 @@
-package net.origamiking.mcmods.modid;
+package net.origamiking.mcmods.movie_characters;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.origamiking.mcmods.movie_characters.armor.ModArmor;
+import net.origamiking.mcmods.movie_characters.group.ModGroup;
+import net.origamiking.mcmods.movie_characters.items.ModItems;
 import net.origamiking.mcmods.orm.OrmMain;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,5 +17,8 @@ public class MovieCharactersModMain implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MovieCharactersModMain.LOGGER.info("Starting "+ MOD_ID + "-" + VERSION + " for ORM-" + OrmMain.VERSION);
+		ModArmor.register();
+		ModGroup.register();
+		ModItems.register();
 	}
 }

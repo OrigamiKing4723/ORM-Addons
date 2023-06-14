@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.modid;
+package net.origamiking.mcmods.movie_characters;
 
 import net.fabricmc.api.ClientModInitializer;
 

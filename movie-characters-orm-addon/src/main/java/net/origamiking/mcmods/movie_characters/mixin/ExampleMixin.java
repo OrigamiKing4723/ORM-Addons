@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.modid.mixin;
+package net.origamiking.mcmods.movie_characters.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

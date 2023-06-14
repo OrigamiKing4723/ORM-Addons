@@ -65,6 +65,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation "maven.modrinth:origamikings-robotics-armor-mod:${orm_version}"
+	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
 
 	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${geckolib_version}"
 

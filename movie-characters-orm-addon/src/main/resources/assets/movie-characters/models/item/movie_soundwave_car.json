@@ -1,0 +1,6 @@
+{
+  "parent":"item/generated",
+  "textures":{
+    "layer0":"movie-characters:item/movie_soundwave_car"
+  }
+}
