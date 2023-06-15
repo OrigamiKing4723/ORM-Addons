@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.+"
 }
 
 version = project.mod_version
@@ -65,6 +66,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation "maven.modrinth:origamikings-robotics-armor-mod:${orm_version}"
+
 	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
 
 
@@ -115,4 +117,24 @@ publishing {
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
 	}
+}
+modrinth {
+//		debugMode = true
+	token = System.getenv("MODRINTH_TOKEN")
+	projectId = "${project_id}"
+	versionNumber = "${mod_version}"
+	versionType = "${version_type}"
+	uploadFile = remapJar // With Loom, this MUST be set to `remapJar`
+	gameVersions = ['1.20.1'] // Must be an array, even with only one version
+	dependencies {
+		// scope.type
+		// The scope can be `required`, `optional`, `incompatible`, or `embedded`
+		// The type can either be `project` or `version`
+		required.project "geckolib"
+		required.project "fabric-api"
+		required.project "origamikings-api"
+		required.project "origamikings-robotics-armor-mod"
+
+	}
+//	changelog = ""
 }
