@@ -2,7 +2,6 @@ package net.origamiking.mcmods.movie_characters.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.origamiking.mcmods.movie_characters.armor.movie_soundwave.MovieSoundwave;
@@ -23,11 +22,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerTransformerChestplate(exporter, MovieSoundwave.CHESTPLATE, MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
         offerTransformerLeggings(exporter, MovieSoundwave.LEGGINGS, MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
         offerTransformerBoots(exporter, MovieSoundwave.BOOTS, MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
-        //TODO ADD CAR
+        offerTransformerCar(exporter, MovieSoundwave.CAR, MovieSoundwave.HELMET, MovieSoundwave.CHESTPLATE, MovieSoundwave.LEGGINGS, MovieSoundwave.BOOTS);
 
 
 
-
-        offerChipRefiningRecipe(exporter, RecipeCategory.MISC, MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP, Blocks.DIAMOND_BLOCK);
+        offerChipRefiningRecipe(exporter, RecipeCategory.MISC, MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
     }
 }
