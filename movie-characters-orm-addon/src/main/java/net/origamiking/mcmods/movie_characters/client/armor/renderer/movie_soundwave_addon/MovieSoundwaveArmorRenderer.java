@@ -2,7 +2,7 @@ package net.origamiking.mcmods.movie_characters.client.armor.renderer.movie_soun
 
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.movie_characters.MovieCharactersModMain;
-import net.origamiking.mcmods.movie_characters.armor.robo_1.MovieSoundwaveArmorItem;
+import net.origamiking.mcmods.movie_characters.armor.movie_soundwave.MovieSoundwaveArmorItem;
 import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 

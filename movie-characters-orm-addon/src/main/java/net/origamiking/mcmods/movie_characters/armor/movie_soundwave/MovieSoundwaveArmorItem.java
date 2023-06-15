@@ -1,11 +1,14 @@
-package net.origamiking.mcmods.movie_characters.armor.robo_1;
+package net.origamiking.mcmods.movie_characters.armor.movie_soundwave;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import it.unimi.dsi.fastutil.objects.ObjectOpenHashSet;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
@@ -32,6 +35,8 @@ public final class MovieSoundwaveArmorItem extends ArmorItem implements GeoItem 
 
     public MovieSoundwaveArmorItem(ArmorMaterial armorMaterial, Type slot, Settings properties) {
         super(armorMaterial, slot, properties);
+
+
     }
 
     // Create our armor model/renderer for Fabric and return it

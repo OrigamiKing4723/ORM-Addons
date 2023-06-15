@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.movie_characters.MovieCharactersModMain;
-import net.origamiking.mcmods.movie_characters.armor.robo_1.MovieSoundwave;
+import net.origamiking.mcmods.movie_characters.armor.movie_soundwave.MovieSoundwave;
 import net.origamiking.mcmods.movie_characters.items.chips.robo_1.MovieSoundwaveChip;
 import net.origamiking.mcmods.movie_characters.items.custom.ItemRegistry;
 import net.origamiking.mcmods.orm.group.ModGroups;
