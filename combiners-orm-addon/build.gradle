@@ -120,7 +120,7 @@ publishing {
 }
 modrinth {
 //		debugMode = true
-	token = System.getenv("MODRINTH_TOKEN")
+	token = System.getenv("MODRINTH_TOKEN_2")
 	projectId = "${project_id}"
 	versionNumber = "${mod_version}"
 	versionType = "${version_type}"
