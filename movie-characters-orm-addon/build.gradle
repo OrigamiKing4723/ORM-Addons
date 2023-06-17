@@ -3,13 +3,9 @@ plugins {
 	id 'maven-publish'
 	id "com.modrinth.minotaur" version "2.+"
 }
-
+archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
-
-base {
-	archivesName = project.archives_base_name
-}
 
 repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
@@ -35,7 +31,7 @@ loom {
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=combiners"
+			vmArg "-Dfabric-api.datagen.modid=movie-characters"
 
 			runDir "build/datagen"
 		}
@@ -66,7 +62,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation "maven.modrinth:origamikings-robotics-armor-mod:${orm_version}"
-	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
+	modImplementation "maven.modrinth:origamikings-api:${origamikings_api}"
 
 	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${geckolib_version}"
 
