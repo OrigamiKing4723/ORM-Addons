@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_movie_soundwave_armor_boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "movie-characters:movie_soundwave_armor_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_movie_soundwave_armor_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "movie-characters:movie_soundwave_armor_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_movie_soundwave_armor_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "movie-characters:movie_soundwave_armor_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_movie_soundwave_armor_leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "movie-characters:movie_soundwave_armor_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "movie-characters:movie_soundwave_car"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_movie_soundwave_armor_helmet",
+      "has_movie_soundwave_armor_chestplate",
+      "has_movie_soundwave_armor_leggings",
+      "has_movie_soundwave_armor_boots",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "movie-characters:movie_soundwave_car"
+    ]
+  },
+  "sends_telemetry_event": false
+}

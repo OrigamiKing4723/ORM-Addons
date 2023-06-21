@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_movie_soundwave_chip": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "movie-characters:movie_soundwave_chip"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "movie-characters:movie_soundwave_armor_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_movie_soundwave_chip",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "movie-characters:movie_soundwave_armor_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

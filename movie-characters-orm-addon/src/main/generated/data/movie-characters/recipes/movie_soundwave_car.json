@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "movie-characters:movie_soundwave_armor_boots"
+    },
+    "C": {
+      "item": "movie-characters:movie_soundwave_armor_chestplate"
+    },
+    "H": {
+      "item": "movie-characters:movie_soundwave_armor_helmet"
+    },
+    "L": {
+      "item": "movie-characters:movie_soundwave_armor_leggings"
+    },
+    "O": {
+      "item": "orm:ore_13"
+    },
+    "T": {
+      "item": "orm:transformium"
+    }
+  },
+  "pattern": [
+    "HTC",
+    "TOT",
+    "LTB"
+  ],
+  "result": {
+    "item": "movie-characters:movie_soundwave_car"
+  },
+  "show_notification": true
+}
