@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.origamiking.mcmods.movie_characters.MovieCharactersModMain"
+          "net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModMain"
 		],
 		"fabric-datagen": [
-			"net.origamiking.mcmods.movie_characters.datagen.MovieCharactersModDataGen"
+          "net.origamiking.mcmods.orm_addon.movie_characters.datagen.MovieCharactersModDataGen"
 		],
 		"client": [
-			"net.origamiking.mcmods.movie_characters.MovieCharactersModClient"
+          "net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModClient"
 		]
 	},
 	"mixins": [

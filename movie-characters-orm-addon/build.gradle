@@ -9,6 +9,7 @@ group = project.maven_group
 
 repositories {
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
 
     maven {
         name = "Modrinth"
@@ -55,7 +56,7 @@ dependencies {
 
     // modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
     modImplementation "maven.modrinth:origamikings-robotics-armor-mod:${orm_version}"
-    modImplementation "maven.modrinth:origamikings-api:${origamikings_api}"
+    modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
 
     modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${geckolib_version}"
 
