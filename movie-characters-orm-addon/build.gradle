@@ -8,9 +8,10 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+    maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-robotics-mod/maven/' }
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
-
+    maven { url 'https://maven.kyrptonaught.dev' }
     maven {
         name = "Modrinth"
         url = "https://api.modrinth.com/maven"
@@ -55,11 +56,12 @@ dependencies {
     // These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
     // modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
-    modImplementation "maven.modrinth:origamikings-robotics-armor-mod:${orm_version}"
+    modImplementation "net.origamiking:OrigamiKings-Robotics-Mod:${orm_version}"
     modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
 
     modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${geckolib_version}"
-
+    modImplementation "net.kyrptonaught:customportalapi:${portal_api_version}"
+    include "net.kyrptonaught:customportalapi:${portal_api_version}"
 }
 
 processResources {
