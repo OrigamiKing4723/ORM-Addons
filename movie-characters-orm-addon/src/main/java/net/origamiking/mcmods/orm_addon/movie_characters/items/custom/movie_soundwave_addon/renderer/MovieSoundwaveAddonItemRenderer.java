@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.orm_addon.movie_characters.client.items.renderer.movie_soundwave_addon;
+package net.origamiking.mcmods.orm_addon.movie_characters.items.custom.movie_soundwave_addon.renderer;
 
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModMain;

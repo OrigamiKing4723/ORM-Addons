@@ -3,10 +3,8 @@ package net.origamiking.mcmods.orm_addon.movie_characters.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.origamiking.mcmods.orm.datagen.recipes.providers.OrmRecipeProvider;
 import net.origamiking.mcmods.orm_addon.movie_characters.armor.movie_soundwave.MovieSoundwave;
-import net.origamiking.mcmods.orm_addon.movie_characters.items.chips.robo_1.MovieSoundwaveChip;
-import net.origamiking.mcmods.orm.datagen.recipes.ArmorRecipes;
+import net.origamiking.mcmods.orm_addon.movie_characters.items.chips.movie_soundwave.MovieSoundwaveChip;
 
 import java.util.function.Consumer;
 

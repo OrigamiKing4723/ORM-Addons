@@ -12,19 +12,18 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModMain;
 import net.origamiking.mcmods.orm_addon.movie_characters.armor.movie_soundwave.MovieSoundwave;
-import net.origamiking.mcmods.orm_addon.movie_characters.items.chips.robo_1.MovieSoundwaveChip;
+import net.origamiking.mcmods.orm_addon.movie_characters.items.chips.movie_soundwave.MovieSoundwaveChip;
 import net.origamiking.mcmods.orm_addon.movie_characters.items.custom.ItemRegistry;
-import net.origamiking.mcmods.orm.group.ModGroups;
 
-public class ModGroup {
+public class ModGroups {
     public static final RegistryKey<ItemGroup> MOVIE_CHARACTERS_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MovieCharactersModMain.MOD_ID, "movie_characters_group"));
 
     public static void register() {
-        ItemGroupEvents.modifyEntriesEvent(ModGroups.ORM_CHIPS).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(net.origamiking.mcmods.orm.group.ModGroups.ORM_CHIPS).register(entries -> {
             entries.add(MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ModGroups.ORM_ADDONS).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(net.origamiking.mcmods.orm.group.ModGroups.ORM_ADDONS).register(entries -> {
             entries.add(ItemRegistry.MOVIE_SOUNDWAVE_ADDON);
         });
 

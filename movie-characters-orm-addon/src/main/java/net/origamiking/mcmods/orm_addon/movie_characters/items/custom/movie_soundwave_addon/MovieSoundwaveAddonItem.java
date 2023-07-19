@@ -2,7 +2,7 @@ package net.origamiking.mcmods.orm_addon.movie_characters.items.custom.movie_sou
 
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.item.Item;
-import net.origamiking.mcmods.orm_addon.movie_characters.client.items.renderer.movie_soundwave_addon.MovieSoundwaveAddonItemRenderer;
+import net.origamiking.mcmods.orm_addon.movie_characters.items.custom.movie_soundwave_addon.renderer.MovieSoundwaveAddonItemRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.RenderProvider;
