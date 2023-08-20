@@ -39,6 +39,11 @@ public final class MovieSoundwaveCarArmorItem extends TransformerArmorItem imple
             }
         });
     }
+
+    @Override
+    public boolean isAutobot() {
+        return false;
+    }
 //    @Override
 //    public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
 //        controllers.add(new AnimationController<>(this, 20, state -> {
