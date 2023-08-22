@@ -15,13 +15,13 @@
 	"icon": "assets/model/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"orm-addon": [
           "net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModMain"
 		],
 		"fabric-datagen": [
           "net.origamiking.mcmods.orm_addon.movie_characters.datagen.MovieCharactersModDataGen"
 		],
-		"client": [
+		"orm-client-addon": [
           "net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModClient"
 		]
 	},
