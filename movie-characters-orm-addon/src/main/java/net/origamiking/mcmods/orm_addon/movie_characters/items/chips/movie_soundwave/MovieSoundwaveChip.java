@@ -7,5 +7,7 @@ import net.origamiking.mcmods.orm_addon.movie_characters.MovieCharactersModMain;
 
 public class MovieSoundwaveChip extends ItemsUtils {
     public static final Item MOVIE_SOUNDWAVE_CHIP = registerItem(MovieCharactersModMain.MOD_ID, "movie_soundwave_chip", new Item(new OrigamiItemSettings()));
-    public static void get() {}
+
+    public static void get() {
+    }
 }

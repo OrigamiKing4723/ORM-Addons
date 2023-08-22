@@ -18,6 +18,7 @@ import java.util.function.Supplier;
 public class MovieSoundwaveAddonItem extends Item implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+
     public MovieSoundwaveAddonItem(Settings settings) {
         super(settings);
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
@@ -56,8 +57,11 @@ public class MovieSoundwaveAddonItem extends Item implements GeoItem {
 //                    if (player != null)
 //                        player.playSound(SoundRegistry.JACK_MUSIC, 1, 1);
 //                })
-                );
+        );
     }
+
     @Override
-    public AnimatableInstanceCache getAnimatableInstanceCache() {return this.cache;}
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return this.cache;
+    }
 }

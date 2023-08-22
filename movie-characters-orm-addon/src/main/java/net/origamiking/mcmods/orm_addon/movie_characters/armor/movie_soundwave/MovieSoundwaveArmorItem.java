@@ -3,7 +3,6 @@ package net.origamiking.mcmods.orm_addon.movie_characters.armor.movie_soundwave;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.origamiking.mcmods.orm.utils.TransformerArmorItem;
 import net.origamiking.mcmods.orm_addon.movie_characters.armor.movie_soundwave.renderer.MovieSoundwaveArmorRenderer;
@@ -15,8 +14,9 @@ import java.util.function.Consumer;
 
 
 public final class MovieSoundwaveArmorItem extends TransformerArmorItem implements GeoItem {
-    public MovieSoundwaveArmorItem(ArmorMaterial armorMaterial, Type slot, Settings properties) {
-        super(armorMaterial, slot, properties);
+
+    public MovieSoundwaveArmorItem(Type type) {
+        super(type);
     }
 
     @SuppressWarnings("unchecked")
@@ -27,7 +27,7 @@ public final class MovieSoundwaveArmorItem extends TransformerArmorItem implemen
 
             @Override
             public BipedEntityModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
-                if(this.renderer == null)
+                if (this.renderer == null)
                     this.renderer = new MovieSoundwaveArmorRenderer();
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);

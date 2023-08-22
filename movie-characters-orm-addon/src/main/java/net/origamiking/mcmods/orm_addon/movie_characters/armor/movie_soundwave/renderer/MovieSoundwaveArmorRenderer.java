@@ -6,12 +6,12 @@ import net.origamiking.mcmods.orm_addon.movie_characters.armor.movie_soundwave.M
 import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
-public class MovieSoundwaveArmorRenderer extends GeoArmorRenderer<MovieSoundwaveArmorItem>{
-        public MovieSoundwaveArmorRenderer() {
-            super(new DefaultedItemGeoModel<>(new Identifier(MovieCharactersModMain.MOD_ID, "armor/movie_soundwave")));
+public class MovieSoundwaveArmorRenderer extends GeoArmorRenderer<MovieSoundwaveArmorItem> {
+    public MovieSoundwaveArmorRenderer() {
+        super(new DefaultedItemGeoModel<>(new Identifier(MovieCharactersModMain.MOD_ID, "armor/movie_soundwave")));
 
-            //addRenderLayer(new AutoGlowingGeoLayer<>(this));
-        }
+        //addRenderLayer(new AutoGlowingGeoLayer<>(this));
     }
+}
 
 

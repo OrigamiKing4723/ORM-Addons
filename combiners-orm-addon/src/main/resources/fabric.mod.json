@@ -15,7 +15,7 @@
 	"icon": "assets/combiners/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"orm-addon": [
 			"net.origamiking.mcmods.orm_addon.combiners.CombinersAddonMain"
 		],
 		"fabric-datagen": [

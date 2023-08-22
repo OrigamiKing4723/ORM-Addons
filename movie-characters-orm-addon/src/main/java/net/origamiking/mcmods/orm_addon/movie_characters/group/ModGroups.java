@@ -18,9 +18,9 @@ import net.origamiking.mcmods.orm_addon.movie_characters.items.custom.ItemRegist
 public class ModGroups {
     private static final RegistryKey<ItemGroup> MOVIE_CHARACTERS_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MovieCharactersModMain.MOD_ID, "movie_characters_group"));
 
-    public static void register(OrmAddonHelper ormAddonHelper) {
-        ormAddonHelper.addChipToGroup(MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
-        ormAddonHelper.addAddonToGroup(ItemRegistry.MOVIE_SOUNDWAVE_ADDON);
+    public static void register(OrmAddonHelper addonHelper) {
+        addonHelper.addChipToGroup(MovieSoundwaveChip.MOVIE_SOUNDWAVE_CHIP);
+        addonHelper.addAddonToGroup(ItemRegistry.MOVIE_SOUNDWAVE_ADDON);
 
         Registry.register(Registries.ITEM_GROUP, MOVIE_CHARACTERS_GROUP, FabricItemGroup.builder()
                 .displayName(Text.translatable("group.movie-characters.group"))
